@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Сергей Рутковский](https://up.htmlacademy.ru/htmlcss/32/user/486091).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
