@@ -8,10 +8,30 @@
   <title>Заголовок</title>
   <meta name="keywords" content="One, two, three, four, five">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="images/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 </head>
 
 <body class="page">
-  <div class="perfectpixel"></div>
+  <div class="perfectpixel-btn" id="btn--index">index</div>
+  <div class="perfectpixel-btn" id="btn--monopod">monopods</div>
+  <div class="perfectpixel-btn" id="btn--grid"> grid</div>
+  <div class="perfectpixel" id="perfectpixel"></div>
 
   <header class="page-header">
     <div class="container container--page-header">
@@ -36,10 +56,10 @@
               <div class="pop-up cart__pop-up">
                 <div class="pop-up__list">
                   <p class="pop-up__item">
-                    <img class="pop-up__item-img" src="#" alt="">Любительская селфи-палка <button class="pop-up__close" type="button"></button>
+                    <img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" alt="Любительская селфи-палка">Любительская селфи-палка <button class="pop-up__close" type="button"></button>
                   </p>
                   <p class="pop-up__item">
-                    <img class="pop-up__item-img" src="#" alt="">Любительская селфи-палка <button class="pop-up__close" type="button"></button>
+                    <img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" alt="Любительская селфи-палка">Любительская селфи-палка <button class="pop-up__close" type="button"></button>
                   </p>
                 </div>
                 <div class="pop-up__sum">
@@ -113,7 +133,7 @@
         </div>
         <div class="slider__item">
           <div class="slider__image-area">
-            <img class="slider__img" src="#" alt="Описание картинки">
+            <img class="slider__img" src="images/slider/quadrocopter.png" width="560" height="560" alt="Боевой лазерный квадрокоптер">
           </div>
           <div class="slider__content-area">
             <span class="slider__order">01</span>
@@ -134,7 +154,7 @@
         </div>
         <div class="slider__item">
           <div class="slider__image-area">
-            <img class="slider__img" src="#" alt="Описание картинки">
+            <img class="slider__img" src="images/slider/fitnestracker.png" width="560" height="560" alt="Фитнес-браслет">
           </div>
           <div class="slider__content-area">
             <span class="slider__order">02</span>
@@ -151,14 +171,14 @@
         </div>
         <div class="slider__item">
           <div class="slider__image-area">
-            <img class="slider__img" src="#" alt="Описание картинки">
+            <img class="slider__img" src="images/slider/monopod.png" width="560" height="560" alt="Восьмиметровая селфи-палка">
           </div>
           <div class="slider__content-area">
             <span class="slider__order">03</span>
             <p class="slider__lead-text">Делай селфи, как Бен Стиллер!</p>
             <P> Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг. </P>
             <a class="btn" href="#"></a>
-            <dl class="slider__table">
+            <dl class="slider__description">
               <div class="slider__description-row">
                 <dt>Длина палки</dt>
                 <dd>8,5 м</dd>
@@ -183,37 +203,37 @@
         <ul class="categories__list">
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="icon-box">icon-box--vr</div>
+              <div class="icon-box icon-box--vr"></div>
               <h3 class="categories__name">Виртуальная реальность</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="icon-box">icon-box--monopod</div>
+              <div class="icon-box icon-box--monopod"></div>
               <h3 class="categories__name">Моноподы для селфи</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="icon-box">icon-box--gopro</div>
+              <div class="icon-box icon-box--gopro"></div>
               <h3 class="categories__name">Экшн-камеры</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="icon-box">icon-box--fit-tracker</div>
+              <div class="icon-box icon-box--fit-tracker"></div>
               <h3 class="categories__name">Фитнес-браслеты</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="icon-box">icon-box--smart-watch</div>
+              <div class="icon-box icon-box--smart-watch"></div>
               <h3 class="categories__name">Умные часы</h3>
             </a>
           </li>
           <li class="categories__item">
             <a class="categories__link" href="#">
-              <div class="icon-box">icon-box--quadrocopter</div>
+              <div class="icon-box icon-box--quadrocopter"></div>
               <h3 class="categories__name">Квадрокоптеры</h3>
             </a>
           </li>
@@ -246,10 +266,9 @@
     </section>
     <div class="container">
       <div class="special-offer">
-        <div class="special-offer__link">
+        <a class="special-offer__link" href="#">
           <p class="special-offer__text">Доставим редкий товар под заказ</p>
-          <div class="special-offer__icon special-offer__icon--truck"></div>
-        </div>
+        </a>
       </div>
     </div>
 
@@ -259,7 +278,7 @@
           <h2 class="site-contacts__header">O нас</h2>
           <p> Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p> Мы можем доставить ваш товар в самые отдалённые уголки России транспортными компаниями:</p>
-          <ul>
+          <ul class="site-contacts__list">
             <li>Меловые линии</li>
             <li>СДИК</li>
             <li>ТоксБерри</li>
@@ -300,18 +319,18 @@
   <footer class="page-footer">
     <div class="container">
       <a class="page-footer__logo logo">
-        <img class="logo__img logo__img--footer" alt="Логотип магазина Device" src="#">
+        <img class="logo__img logo__img--footer" alt="Логотип магазина Device" src="images/logo-footer.png" width="145" height="36">
       </a>
       <address class="page-footer__address">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
       <ul class="page-footer__nav">
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#">Доставка</a>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="#">Доставка</a>
         </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#">Гарантия</a>
+        <li class="page-footer__nav-tem">
+          <a class="page-footer__nav-link" href="#">Гарантия</a>
         </li>
-        <li class="footer-nav__item">
-          <a class="footer-nav__link" href="#">Контакты</a>
+        <li class="page-footer__nav-item">
+          <a class="page-footer__nav-link" href="#">Контакты</a>
         </li>
       </ul>
       <ul class="page-footer__socials socials">
@@ -336,12 +355,13 @@
       </address>
       <div class="page-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru/" target="_blank">
-          <img class="copytight__image" src="#" alt="Описание картинки">
+          <img class="copyright__image" src="images/copyright.png" alt="Логотип компании HTML Академии" width="115" height="34">
         </a>
       </div>
     </div>
 
   </footer>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>
