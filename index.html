@@ -31,7 +31,7 @@
     <div class="perfectpixel-btn" id="btn--grid"> grid</div>
     <div class="perfectpixel" id="perfectpixel"></div>
     <header class="page-header">
-      <div class="container bg-yellow"><a class="page-header__logo logo"><img class="logo__img logo__img--header" src="images/logo.png" width="145" height="36" alt="Логотип магазина Device"></a>
+      <div class="container bg-yellow page-header__container"><a class="page-header__logo logo"><img class="logo__img logo__img--header" src="images/logo.png" width="145" height="36" alt="Логотип магазина Device"></a>
         <div class="top-header">
           <form class="top-header__search search" action="https://echo.htmlacademy.ru/" method="get">
             <input placeholder="Поиск по сайту" name="search" type="search">
@@ -44,22 +44,17 @@
               <div class="top-header__cart-wrapper cart"><span class="cart-count">2</span><a class="top-link top-link--cart" href="#">Корзина</a>
                 <div class="pop-up cart__pop-up">
                   <div class="pop-up__list">
-                    <p class="pop-up__item"><img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" alt="Любительская селфи-палка">Любительская <br> селфи-палка
-                      <button class="pop-up__delete" type="button">
-                        <svg width="11" height="11" viewbox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M11 1L10 0L5.5 4.5L1 0L0 1L4.5 5.5L0 10L1 11L5.5 6.5L10 11L11 10L6.5 5.5L11 1Z" fill="white"></path>
-                        </svg>
-                      </button>
+                    <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-small.jpg" alt="Любительская селфи-палка">Любительская <br> селфи-палка</a>
+                      <button class="pop-up__delete" type="button"></button>
                     </p>
-                    <p class="pop-up__item"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка
+                    <p class="pop-up__item"><a class="pop-up__link" href="#"><img class="pop-up__item-img" src="images/content/thubnails/selfi-2-small.jpg" alt="Любительская селфи-палка">Профессиональная <br> селфи-палка</a>
                       <button class="pop-up__delete" type="button"></button>
                     </p>
                   </div>
                   <div class="pop-up__sum">
                     <p>Товаров:<span class="pop-up__sum-count"> 2</span></p>
                     <p>Сумма:<span class="pop-up__sum-price"> 2000 &#8381;</span></p>
-                  </div>
-                  <div class="pop-up__button-wrapper"><a class="pop-up__button-link" href="#">Открыть корзину</a></div>
+                  </div><a class="pop-up__button-link" href="#">Открыть корзину</a>
                 </div>
               </div>
             </div>
@@ -88,13 +83,23 @@
         <div class="container">
           <h2 class="visually-hidden">Популярные товары</h2>
           <div class="slider__buttons">
-            <button class="arrow arrow--left" type="button"></button>
-            <button class="arrow arrow--right" type="button"></button>
+            <button class="arrow arrow--left" type="button">
+              <div class="span visually-hidden">Предыдущий товар.</div>
+            </button>
+            <button class="arrow arrow--right" type="button">
+              <div class="span visually-hidden">Следующий товар.</div>
+            </button>
           </div>
           <div class="slider__dots">
-            <button class="dot dot--active" type="button"></button>
-            <button class="dot" type="button"></button>
-            <button class="dot" type="button"></button>
+            <button class="dot dot--active" type="button">
+              <div class="span visually-hidden">Первый товар.</div>
+            </button>
+            <button class="dot" type="button">
+              <div class="span visually-hidden">Второй товар.</div>
+            </button>
+            <button class="dot" type="button">
+              <div class="span visually-hidden">Третий товар.</div>
+            </button>
           </div>
           <div class="slider__item">
             <div class="slider__image-area"><img class="slider__img" src="images/slider/quadrocopter.png" width="560" height="560" alt="Боевой лазерный квадрокоптер"></div>
@@ -183,9 +188,17 @@
       <section class="advantages">
         <div class="container d-flex">
           <div class="advantages__controls">
-            <button class="btn btn--selected" type="button">Доставка</button>
-            <button class="btn" type="button">Гарантия</button>
-            <button class="btn" type="button">Кредит</button>
+            <ul class="advantages__controls-list">
+              <li class="advantages__controls-item advantages__controls-item--selected">
+                <button class="btn btn--advantages" type="button">Доставка</button>
+              </li>
+              <li class="advantages__controls-item">
+                <button class="btn btn--advantages" type="button">Гарантия</button>
+              </li>
+              <li class="advantages__controls-item">
+                <button class="btn btn--advantages" type="button">Кредит</button>
+              </li>
+            </ul>
           </div>
           <div class="advantages__content">
             <div class="advantages__item advantages__item--delivery">
@@ -272,7 +285,7 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container container--page-footer"><a class="page-footer__logo logo"><img class="logo__img logo__img--footer" alt="Логотип магазина Device" src="images/logo-footer.png" width="145" height="36"></a>
+      <div class="container"><a class="page-footer__logo logo"><img class="logo__img logo__img--footer" alt="Логотип магазина Device" src="images/logo-footer.png" width="145" height="36"></a>
         <div class="page-footer__top-wrapper">
           <address class="page-footer__address">Санкт-Петербург, набережная <br> реки Карповки, 5, литера П.</address>
           <ul class="page-footer__nav">
@@ -323,6 +336,39 @@
         </div>
       </div>
     </footer>
+    <div class="modal-container" style="display: none;">
+      <div class="modal">
+        <h2 class="modal__header">Доставка под заказ</h2>
+        <button class="modal__close" type="button"><span class="visually-hidden">Закрыть</span></button>
+        <form class="form-order" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="form-order__row">
+            <div class="field-group">
+              <label class="label-order" for="customer-name">Ваше имя</label>
+              <input class="input-order" type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия"><span class="text-input-order text-input-order--invalid">Пожалуйста, представьтесь</span>
+            </div>
+            <div class="field-group">
+              <label class="label-order" for="customer-email">Ваш e-mail:</label>
+              <input class="input-order" type="email" name="customer-email" id="customer-email" placeholder="Ваш e-mail" value="krasotka92@mail.ru"><span class="text-input-order">Забавный у вас адрес</span>
+            </div>
+          </div>
+          <div class="counter-area">
+            <div class="field-group">
+              <label class="label-order" for="customer-name">Что нужно привести:</label>
+              <input class="input-order" type="text" name="customer-name" id="customer-name" placeholder="В свободной форме"><span class="text-input-order"></span>
+            </div>
+            <div class="field-group">
+              <label class="label-order" for="goods-count">Количество</label>
+              <div class="counter-group">
+                <button class="counter-order" type="button" id="counter-minus" tabindex="1"><span class="visually-hidden">Увеличить количество на 1</span></button>
+                <input class="input-number-order" type="number" name="goods-count" id="goods-count" value="1" min="1" tabindex="2">
+                <button class="counter-order" type="button" id="counter-plus" tabindex="1"><span class="visually-hidden">Уменьшить количество на 1</span></button>
+              </div>
+            </div>
+          </div>
+          <button class="btn btn--order" type="submit">Отправить</button>
+        </form>
+      </div>
+    </div>
     <script src="scripts/script.js"></script>
   </body>
 </html>
