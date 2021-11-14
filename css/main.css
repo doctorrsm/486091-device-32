@@ -80,11 +80,6 @@ img {
   display: flex;
 }
 
-/* class "d-none" hide elements preparing for js-developer (slider items, tab items and the modal window) */
-.d-none {
-  display: none !important;
-}
-
 .overflow-hidden {
   overflow: hidden;
 }
@@ -2977,4 +2972,9 @@ h1 + .slider .slider__item::before {
 
 .btn--order::before {
   background-color: var(--yellow-hover);
+}
+
+/* class "d-none" hide elements preparing for js-developer (slider items, tab items and the modal window) */
+.d-none {
+  display: none;
 }
